@@ -59,7 +59,7 @@ const routes = {
 - L'utilisation de ce boilerplate permet d'avoir un serveur de développement hyper performant, de développer avec beaucoup de confort, de faciliter la structure d'un projet, de gérer les dépendances, de transformer les assets de manière centralisée, ...
 
 # Resources
-- The source of the webpack configuration comes mainly from [Phaser 3 Webpack Project Template]("https://github.com/photonstorm/phaser3-project-template").  
+- The source of the webpack configuration comes mainly from [Phaser 3 Webpack Project Template](https://github.com/photonstorm/phaser3-project-template).  
 - The game presented was developped based on the [Modern JavaScript Phaser 3 Tutorial : Part 1 to Part 5](https://blog.ourcade.co/posts/2020/make-first-phaser-3-game-modern-javascript-part1/)
  and uses Webpack instead of Parcel as module bundler.
 - favicon : https://upload.wikimedia.org/wikipedia/commons/3/3e/AIGA_information.svg, AIGA (American Institute of Graphic Arts)
