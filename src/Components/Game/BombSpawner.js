@@ -1,10 +1,11 @@
-import Phaser from "phaser";
+/* eslint-disable no-underscore-dangle */
+import Phaser from 'phaser';
 
 export default class BombSpawner {
   /**
    * @param {Phaser.Scene} scene
    */
-  constructor(scene, bombKey = "bomb") {
+  constructor(scene, bombKey = 'bomb') {
     this.scene = scene;
     this.key = bombKey;
 
@@ -16,12 +17,9 @@ export default class BombSpawner {
   }
 
   spawn(playerX = 0) {
-    const x =
-      playerX < 400
-        ? Phaser.Math.Between(400, 800)
-        : Phaser.Math.Between(0, 400);
+    const x = playerX < 400 ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
 
-    const bomb = this.group.create(x, 16, this.key);
+    const bomb = this._group.create(x, 16, this.key);
     bomb.setBounce(1);
     bomb.setCollideWorldBounds(true);
     bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
